@@ -23,6 +23,17 @@ function game(userChoice) {
     case "sp":
     console.log("User Wins!")
     break;
+    case "rp":
+    case "ps":
+    case "sr":
+    console.log("User Loses!")
+    break;
+    case "rr":
+    case "pp":
+    case "ss":
+    console.log("Its a draw")
+    break;
+
 
 
   }
