@@ -18,21 +18,21 @@ function getComputerChoice() {
 function game(userChoice) {
   const computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
-    case "rp":
+    case "rs":
     case "pr":
     case "sp":
-    console.log("User Wins!")
-    break;
+      console.log("User Wins!")
+      break;
     case "rp":
     case "ps":
     case "sr":
-    console.log("User Loses!")
-    break;
+      console.log("User Loses!")
+      break;
     case "rr":
     case "pp":
     case "ss":
-    console.log("Its a draw")
-    break;
+      console.log("Its a draw")
+      break;
 
 
 
