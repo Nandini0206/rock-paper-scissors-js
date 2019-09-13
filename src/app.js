@@ -15,7 +15,7 @@ function getComputerChoice() {
 };
 
 function win() {
-  console.log("WIN!")
+  userScore++;
 };
 
 function lose() {
