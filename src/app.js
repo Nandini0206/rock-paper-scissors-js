@@ -14,6 +14,10 @@ function getComputerChoice() {
   return choices[randomNumber];
 };
 
+function covertToWord(letter) {
+  if (letter ==='r') return "Rock"
+  
+}
 function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
