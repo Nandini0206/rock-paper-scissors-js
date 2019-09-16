@@ -38,7 +38,10 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
 };
 
-function draw() {
+function draw(userChoice, computerChoice) {
+  const smallUserWord = "user".fontsize(3).sup();
+  const smallCompWord = "comp".fontsize(3).sup();
+  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. Its a draw!`;
 };
 
 function game(userChoice) {
