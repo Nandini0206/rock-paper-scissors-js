@@ -47,6 +47,8 @@ function draw(userChoice, computerChoice) {
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. Its a draw!`;
+  document.getElementById(userChoice).classList.add('gray-glow')
+  setTimeout(function() { document.getElementById(userChoice).classList.remove('gray-glow') }, 300);
 };
 
 function game(userChoice) {
